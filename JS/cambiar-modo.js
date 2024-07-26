@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Código existente...
-
+    
+    const desencritarImg = document.querySelector('.desencritar__img__oscuro');
+    const desencritarImg1 = document.querySelector('.desencritar__img__claro');
     const cambiarTono = document.getElementById('cambio__modo');
 
     cambiarTono.addEventListener('click', () => {
