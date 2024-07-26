@@ -11,9 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modo_oscuro) {
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
+            desencritarImg.style.display = 'block';
+            desencritarImg.style.width='50%'
         } else {
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
+            desencritarImg1.style.display = 'block';
+            desencritarImg.style.display = 'none';
         }
     });
 });
