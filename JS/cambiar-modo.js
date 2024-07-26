@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modo_oscuro) {
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
+            desencritarImg1.style.display = 'none';
             desencritarImg.style.display = 'block';
             desencritarImg.style.width='50%'
         } else {
