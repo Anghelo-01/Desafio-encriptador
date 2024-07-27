@@ -105,7 +105,6 @@ body{
     background-color: #a87c5cb7; 
     box-shadow: var(--sombra-claro);
     color: #000;   
-    border: none;
     resize: none;
     font-size: 24px;
     border: 2px solid #e9a16e;
