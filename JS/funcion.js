@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showError(message) {
         errorMessage.textContent = message;
-        errorMessage.style.color = '#550f0f';
+        errorMessage.style.color = 'red';
     }
 
     function actualizarUI(texto) {
