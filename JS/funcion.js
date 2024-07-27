@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showError(message) {
         errorMessage.textContent = message;
-        errorMessage.style.color = 'red';
+        errorMessage.style.color = '#550f0f';
     }
 
     function actualizarUI(texto) {
@@ -77,11 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function validarTexto(texto) {
         if (hasUppercase(texto) && hasAccent(texto)) {
-            return 'Error: palabra con tilde - ingresaste una letra mayúscula.';
+            return 'Error: Ingresaste una palabra con tilde - ingresaste una letra mayúscula.';
         } else if (hasUppercase(texto)) {
-            return 'Error: ingresaste una letra mayúscula.';
+            return 'Error: Ingresaste una letra mayúscula.';
         } else if (hasAccent(texto)) {
-            return 'Error: palabra con tilde.';
+            return 'Error: Ingresaste una palabra con tilde.';
         }
         return '';
     }
