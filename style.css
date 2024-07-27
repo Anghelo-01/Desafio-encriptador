@@ -101,11 +101,9 @@ body{
 
 }
 .encriptar__Texto{
-    /* dar color al modo claro */
     height: 100%;
     background-color: #a87c5cb7; 
     box-shadow: var(--sombra-claro);
-    /*box-shadow: 0 0 20px 15px #a37239ee;   */ 
     color: #000;   
     border: none;
     resize: none;
@@ -318,6 +316,10 @@ body.dark-mode .desencriptar__mensaje{
         padding: 10px 10px;
         max-width: 100%;
         max-height: 200px;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        gap: 0;
     }
 
     .desencritar__img {
