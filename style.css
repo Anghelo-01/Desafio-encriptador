@@ -130,37 +130,22 @@ body{
     width: 100%;
     gap: 20px;
 }
-.encriptar__botones__estilo1{
-    max-width: 380px;
-    width: 100%;
-    padding: 20px 0;
-    border-radius: 20px;
-    background-color: var(--color-fondo-claro);
-    color: var(--color-letra);
-    font-size: 20px;
-    box-sizing: border-box;
-    border: 2px solid #e9a16e;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-.encriptar__botones__estilo1:hover {
-    background-color: #b46f20;
-}
+.encriptar__botones__estilo1,
 .encriptar__botones__estilo2{
     max-width: 380px;
     width: 100%;
     padding: 20px 0;
     border-radius: 20px;  
-    background-color: var(--color-fondo-claro);
+    background-color: #bb7542;
     color: var(--color-letra);
     font-size: 20px;
     box-sizing: border-box;
     border: 2px solid #e9a16e;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
+.encriptar__botones__estilo1:hover ,
 .encriptar__botones__estilo2:hover {
-    background-color: #b67327;
+    background-color: #9e611b;
 }
 .desencritar{
     /* dar color al modo claro */
@@ -269,7 +254,7 @@ body.dark-mode .footer{
 body.dark-mode .encriptar__botones__estilo2,
 body.dark-mode .encriptar__botones__estilo1{
     box-shadow: var(--sombra-oscuro); 
-    background-color: var(--color-fondo-oscuro);
+    background-color: #313131;
     border: 3px solid #555555;
 }
 body.dark-mode .desencriptar__boton{
