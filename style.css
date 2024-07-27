@@ -207,7 +207,8 @@ body{
     width: 100%;
     padding: 10px 0;
     border-radius: 20px;
-    background: radial-gradient(circle, #ecb411, #e0983f); 
+    background-color: #bb7542;
+    border: 3px solid #d49364;
     color: var(--color-letra);
     font-size: 20px;
     box-sizing: border-box;
@@ -266,11 +267,14 @@ body.dark-mode .footer{
     color: #d1cfce;
 }
 body.dark-mode .encriptar__botones__estilo2,
-body.dark-mode .encriptar__botones__estilo1,
-body.dark-mode .desencriptar__boton{
+body.dark-mode .encriptar__botones__estilo1{
     box-shadow: var(--sombra-oscuro); 
     background-color: var(--color-fondo-oscuro);
     border: 3px solid #555555;
+}
+body.dark-mode .desencriptar__boton{
+    background-color: #313131;
+    border: 3px solid #7a7978;
 }
 body.dark-mode .encriptar__botones__estilo1:hover {
     background-color: #070707;
