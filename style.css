@@ -236,14 +236,14 @@ body.dark-mode .encriptar__Texto{
     background-color: var(--color-fondo-oscuro); 
     box-shadow: var(--sombra-oscuro); 
     color: #d1cfce;
-    border: 4px solid #4b4a4a;
+    border: 4px solid #3a3a3a;
 } 
 
 body.dark-mode .desencritar {
     background-color: var(--color-fondo-oscuro); 
     box-shadow: var(--sombra-oscuro);    
     color: #d1cfce;
-    border: 4px solid #4b4a4a;
+    border: 4px solid #3a3a3a;
 }
 
 body.dark-mode .footer{
@@ -255,7 +255,7 @@ body.dark-mode .encriptar__botones__estilo2,
 body.dark-mode .encriptar__botones__estilo1{
     box-shadow: var(--sombra-oscuro); 
     background-color: #313131;
-    border: 3px solid #555555;
+    border: 3px solid #3a3a3a;
 }
 body.dark-mode .desencriptar__boton{
     background-color: #313131;
