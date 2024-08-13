@@ -27,24 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
         textarea.select();
         document.execCommand('copy');
         document.body.removeChild(textarea);
-        alert('¡Texto copiado al portapapeles!');
-    }
-
-    function hasUppercase(str) {
-        return /[A-Z]/.test(str);
-    }
-
-    function hasAccent(str) {
-        return /[áéíóúÁÉÍÓÚ]/.test(str);
-    }
-
-    function showError(message) {
-        errorMessage.textContent = message;
-        errorMessage.style.color = 'red';
+        alert('¡El texto fue copiado correctamente!');
     }
 
     function actualizarUI(texto) {
-        // Encriptar el texto solo una vez
         desencriptarMensaje.value = texto;
         desencriptarMensaje.style.display = 'block';
         desencriptarMensaje.style.width = '90%';
@@ -54,60 +40,46 @@ document.addEventListener('DOMContentLoaded', () => {
         desencriptarMensaje.disabled = true;
         desencriptarMensaje.style.backgroundColor = 'transparent';
         copiarButton.style.display = 'block';
-
-         // Ocultar la imagen y el texto por defecto
         desencritarImg.style.display = 'none';
         desencritarTexto.style.display = 'none';
-
-        // Aplicar estilos al div 'desencritar'
         desencritarDiv.style.justifyContent = 'space-between';
-        errorMessage.textContent = ''; // Limpiar mensaje de error
+        
     }
 
-    function mostrarErrorUI(message) {
-        showError(message);
-        desencriptarMensaje.style.display = 'none';
-        copiarButton.style.display = 'none';
-        // Ocultar la imagen y el texto por defecto
-        desencritarImg.style.display = 'block';
-        desencritarTexto.style.display = 'block';
-        // Aplicar estilos al div 'desencritar'
-        desencritarDiv.style.justifyContent = 'center';
+    // Evento para manejar entrada de texto
+    inputTexto.addEventListener('input', () => {
+    // Convertir mayúsculas a minúsculas automáticamente
+    let valor = inputTexto.value.toLowerCase();
+
+    // Verificar y alertar si se intenta ingresar una letra con tilde
+    if (/[áéíóúÁÉÍÓÚ]/.test(inputTexto.value)) {
+        alert('Error: Intentaste ingresar una palabra con tilde.');
+        valor = valor.replace(/[áéíóúÁÉÍÓÚ]/g, ''); // Eliminar tildes
     }
 
-    function validarTexto(texto) {
-        if (hasUppercase(texto) && hasAccent(texto)) {
-            return 'Error: Ingresaste una palabra con tilde - ingresaste una letra mayúscula.';
-        } else if (hasUppercase(texto)) {
-            return 'Error: Ingresaste una letra mayúscula.';
-        } else if (hasAccent(texto)) {
-            return 'Error: Ingresaste una palabra con tilde.';
-        }
-        return '';
+    // Verificar y alertar si se intenta ingresar un carácter especial
+    if (/[^a-z\s]/.test(valor)) {
+        alert('Error: Se intentó ingresar un carácter especial.');
+        valor = valor.replace(/[^a-z\s]/g, ''); // Eliminar caracteres especiales
     }
+
+    // Actualizar el valor del textarea
+    inputTexto.value = valor;
+});
+
 
     encriptarButton.addEventListener('click', () => {
         const texto = inputTexto.value;
-        const errorMessage = validarTexto(texto);
-
-        if (errorMessage) {
-            mostrarErrorUI(errorMessage);
-        } else {
             const textoEncriptado = encriptarTexto(texto);
             actualizarUI(textoEncriptado);
-        }
+        
     });
 
     desencriptarButton.addEventListener('click', () => {
         const texto = inputTexto.value;
-        const errorMessage = validarTexto(texto);
-
-        if (errorMessage) {
-            mostrarErrorUI(errorMessage);
-        } else {
-            const textoDesencriptado = desencriptarTexto(texto);
+        const textoDesencriptado = desencriptarTexto(texto);
         actualizarUI(textoDesencriptado);
-        }
+        
     });
 
     copiarButton.addEventListener('click', () => {
