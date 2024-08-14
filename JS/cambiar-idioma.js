@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             encriptarBtn: "Encriptar",
             desencriptarBtn: "Desencriptar",
             copiarBtn: "Copiar",
-            imagenBoton: 'url(img/bandera-es.png)' // Imagen de fondo para el botón en español
+            imagenBoton: 'url(img/bandera-es.png)' 
         },
         en: {
             titulo: "Text Encryptor",
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             encriptarBtn: "Encrypt",
             desencriptarBtn: "Decrypt",
             copiarBtn: "Copy",
-            imagenBoton: 'url(img/bandera-eeuu.png)' // Imagen de fondo para el botón en inglés
+            imagenBoton: 'url(img/bandera-eeuu.png)' 
         }
     };
 
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('desencriptar__boton').textContent = cambiarTexto.copiarBtn;
 
         // Cambiar el fondo del botón de idioma
-        cambiarIdioma.style.backgroundImage = t.buttonBackground;
+        cambiarIdioma.style.backgroundImage = cambiarTexto.imagenBoton;
     }
 
     cambiarIdioma.addEventListener('click', () => {
@@ -55,6 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
         cambiarLenguaje(lenguajeActual);
     });
 
-    // Inicializa el idioma
-    cambiarLenguaje(currentLanguage);
+    cambiarLenguaje(lenguajeActual);
 });
