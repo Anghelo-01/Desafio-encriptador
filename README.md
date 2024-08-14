@@ -1,38 +1,50 @@
-# Desafio-encriptador
-Proyecto de Encriptación y Desencriptación de Texto
-Este proyecto es una aplicación web que permite encriptar y desencriptar textos de acuerdo a un conjunto de reglas predefinidas. Además, cuenta con funcionalidades de cambio de tema (modo claro/oscuro) y cambio de idioma. El diseño está optimizado para ser responsivo y funcionar correctamente en diferentes tamaños de pantalla.
+# 🛠️ Desafío Encriptador
 
-Tabla de Contenidos
-Características
-Tecnologías Utilizadas
-Uso
+## Proyecto de Encriptación y Desencriptación de Texto
 
+**Desafío Encriptador** es una aplicación web interactiva diseñada para encriptar y desencriptar textos basándose en un conjunto específico de reglas. Este proyecto no solo se enfoca en la funcionalidad, sino también en una experiencia de usuario fluida, incluyendo opciones para alternar entre modos de tema (claro y oscuro) y cambiar el idioma de la interfaz. Todo el diseño está optimizado para una visualización adecuada en diferentes dispositivos y tamaños de pantalla.
 
-Características
-Encriptación y Desencriptación: Convierte texto de acuerdo a reglas específicas (e.g., e a enter, a a ai).
-Modo Claro/Oscuro: Los usuarios pueden alternar entre un tema claro y un tema oscuro, con transiciones suaves.
-Cambio de Idioma: Soporte para cambiar entre diferentes idiomas, con transiciones suaves entre ellos.
-Responsividad: La interfaz está optimizada para dispositivos de diferentes tamaños, incluyendo móviles.
+## 🗂️ Tabla de Contenidos
 
-Tecnologías Utilizadas
-HTML5: Estructura básica de la página.
-CSS3: Estilos y diseño responsivo, incluyendo transiciones suaves.
-JavaScript: Lógica de encriptación/desencriptación y manejo de interacciones del usuario.
-FontAwesome: Iconos utilizados para GitHub, LinkedIn y otros.
-Google Fonts: Fuentes personalizadas para diferentes secciones del proyecto.
+- [Características](#características)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Uso](#uso)
 
-Uso
-Encriptar Texto:
+## ✨ Características
 
-Escribe o pega el texto en el área de texto principal.
-Presiona el botón de "Encriptar" para convertir el texto.
-Desencriptar Texto:
+- **🔒 Encriptación y Desencriptación:**
+  - Convierte texto utilizando reglas específicas. Ejemplo: "e" se convierte en "enter", "a" se convierte en "ai".
 
-Escribe o pega el texto encriptado en el área de texto.
-Presiona el botón de "Desencriptar" para revertir el texto a su forma original.
-Cambiar de Modo:
+- **🌗 Modo Claro/Oscuro:**
+  - Permite a los usuarios alternar entre un tema claro y un tema oscuro, con transiciones suaves para una experiencia de usuario agradable.
 
-Haz clic en el botón de cambio de modo para alternar entre modo claro y oscuro.
-Cambiar de Idioma:
+- **🌐 Cambio de Idioma:**
+  - Soporte para cambiar entre diferentes idiomas, también con transiciones suaves para mantener la consistencia visual y de uso.
 
-Haz clic en el botón de cambio de idioma para alternar entre los idiomas disponibles.
+- **📱 Responsividad:**
+  - La interfaz está optimizada para funcionar correctamente en dispositivos de diferentes tamaños, desde móviles hasta pantallas de escritorio.
+
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5:** Para la estructura básica y el marcado semántico del proyecto.
+- **CSS3:** Para el diseño visual, incluyendo estilos responsivos y transiciones suaves entre modos e idiomas.
+- **JavaScript:** Manejo de la lógica de encriptación/desencriptación y la interacción del usuario.
+- **FontAwesome:** Iconos utilizados en los botones sociales como GitHub y LinkedIn.
+- **Google Fonts:** Fuentes personalizadas para darle una apariencia única y profesional al proyecto.
+
+## 📋 Uso
+
+### Encriptar Texto:
+
+1. **Ingresa o pega el texto** en el área de texto principal.
+2. **Haz clic en el botón "Encriptar"** para convertir el texto según las reglas predefinidas.
+
+### Desencriptar Texto:
+1. **Ingresa o pega el texto** encriptado en el área de texto.
+2. **Haz clic en el botón "Desencriptar"** para revertir el texto a su forma original.
+
+### Cambiar de Modo:
+1. Haz clic en el botón de cambio de modo en la cabecera para alternar entre el modo claro y el modo oscuro.
+
+### Cambiar de Idioma:
+1. Haz clic en el botón de cambio de idioma para alternar entre los idiomas disponibles.
