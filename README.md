@@ -6,9 +6,9 @@
 
 ## 🗂️ Tabla de Contenidos
 
-- [Características](#características)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Uso](#uso)
+- Características
+- Tecnologías Utilizadas
+- Uso
 
 ## ✨ Características
 
