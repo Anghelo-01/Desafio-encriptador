@@ -46,24 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
         
     }
 
-    // Evento para manejar entrada de texto
+    
     inputTexto.addEventListener('input', () => {
-    // Convertir mayúsculas a minúsculas automáticamente
+    
     let valor = inputTexto.value.toLowerCase();
 
-    // Verificar y alertar si se intenta ingresar una letra con tilde
     if (/[áéíóúÁÉÍÓÚ]/.test(inputTexto.value)) {
         alert('Error: Intentaste ingresar una palabra con tilde.');
-        valor = valor.replace(/[áéíóúÁÉÍÓÚ]/g, ''); // Eliminar tildes
+        valor = valor.replace(/[áéíóúÁÉÍÓÚ]/g, ''); 
     }
 
-    // Verificar y alertar si se intenta ingresar un carácter especial
     if (/[^a-z\s]/.test(valor)) {
         alert('Error: Se intentó ingresar un carácter especial.');
-        valor = valor.replace(/[^a-z\s]/g, ''); // Eliminar caracteres especiales
+        valor = valor.replace(/[^a-z\s]/g, ''); 
     }
 
-    // Actualizar el valor del textarea
     inputTexto.value = valor;
 });
 
