@@ -78,6 +78,7 @@ html,body{
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
+
 body{
     display: flex;
     flex-direction: column;
@@ -158,6 +159,7 @@ body{
     background-color: #9e611b;
 }
 .desencritar{
+    /* dar color al modo claro */
     background-color: var(--color-fondo-claro);
     box-shadow: var(--sombra-claro);    
     color: var(--color-letra);
@@ -292,6 +294,61 @@ body.modo-oscuro .desencriptar__mensaje{
     color: #ffffff;
 }
 
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+
+
+}
+
+.img_modal{
+    width: 100%;
+    max-width: 60px;
+}
+.modal_contenido {
+    background-color: white;
+    font-family: var(--letra-main);
+    font-weight: 800;
+    margin: 15% auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
 @media (max-width: 768px) {
     body{
         background-image: none;
@@ -323,7 +380,7 @@ body.modo-oscuro .desencriptar__mensaje{
     }
     .desencritar {
         width: 100%; 
-        height: 55vh; 
+        height: 150px; 
         padding: 10px 10px;
         max-width: 100%;
         box-sizing: border-box;
