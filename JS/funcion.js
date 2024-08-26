@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.execCommand('copy');
             document.body.removeChild(textarea);
             showModal('¡El texto fue copiado correctamente!','0px 0px 80px rgba(255, 255, 255)');
-            img_modal.src=""; 
+            img_modal.src="img/copia_alerta.png";   //Se modifica la imagen del modal
+    
         }
     
     //Funcion para actualizar el div con la clase desencriptar    
