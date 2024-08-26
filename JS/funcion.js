@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.execCommand('copy');
             document.body.removeChild(textarea);
             showModal('¡El texto fue copiado correctamente!','0px 0px 80px rgba(255, 255, 255)');
+            alertaExito();
             img_modal.src="img/copia_alerta.png";   //Se modifica la imagen del modal
     
         }
