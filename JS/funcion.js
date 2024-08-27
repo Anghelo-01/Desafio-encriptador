@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Configurar el cierre automático después de 2 segundos
             autoCloseTimeout = setTimeout(() => {
             modal.style.display = 'none';
-            }, 2500);
+            }, 2000);
         }
     });
     
