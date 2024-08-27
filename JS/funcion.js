@@ -118,11 +118,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Llamar a la función una vez al cargar la página
         resizeDiv();
     
-        /*// Configurar el event listener para redimensionar la ventana
-        window.addEventListener('resize', resizeDiv);*/
+        // Configurar el event listener para redimensionar la ventana
+        window.addEventListener('resize', resizeDiv);
         });
     
-    // Evento para manejar la accion del boton desencriptar
+        // Evento para manejar la accion del boton desencriptar
         desencriptarButton.addEventListener('click', () => {
             const texto = inputTexto.value;
             const textoDesencriptado = desencriptarTexto(texto);
@@ -131,9 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
             alertaExito();
             showModal('Exito: Mensaje desencriptado correctamente.','0px 0px 80px rgba(0, 255, 0)');
-    // Llamar a la función una vez al cargar la página
+        // Llamar a la función una vez al cargar la página
         resizeDiv();
     
+        // Configurar el event listener para redimensionar la ventana
+        window.addEventListener('resize', resizeDiv);
     
         });
     
