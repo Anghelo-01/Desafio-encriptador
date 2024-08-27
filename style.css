@@ -330,20 +330,17 @@ body.modo-oscuro .desencriptar__mensaje{
 
 }
 
-.close-button {
-    color: #aaa;
+.modal_mensaje{
+    color: #000;
+}
+.boton_cerrar {
+    color: #000;
     float: right;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.close-button:hover,
-.close-button:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
 
