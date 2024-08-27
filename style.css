@@ -175,6 +175,7 @@ body{
     box-sizing: border-box;
     border-radius: 30px;
     border: 2px solid #e9a16e;
+    min-height: 400px;
 }
 .desencritar__img{
     width: 80%;
@@ -379,6 +380,7 @@ body.modo-oscuro .desencriptar__mensaje{
         max-width: 100%;
         box-sizing: border-box;
         gap: 8px;
+        min-height: auto;
     }
 
     .desencritar__img {
