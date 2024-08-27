@@ -331,7 +331,7 @@ body.modo-oscuro .desencriptar__mensaje{
 }
 
 .modal_mensaje{
-    color: #000;
+    color: #000;  
 }
 .boton_cerrar {
     color: #000;
@@ -340,9 +340,6 @@ body.modo-oscuro .desencriptar__mensaje{
     font-weight: bold;
     cursor: pointer;
 }
-
-
-
 
 
 
