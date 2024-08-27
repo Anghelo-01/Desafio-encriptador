@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     
     // Verificar y alertar si se intenta ingresar un carácter especial
-            if (/[^a-z\s]/.test(valor)) {
-                showModal('Error: Se intentó ingresar un carácter especial.','0px 0px 80px rgba(255, 0, 0)');
+            if (/[^a-zñ\s]/.test(valor)) {
+                showModal('Error: Intentaste ingresar un caracter especial.','0px 0px 80px rgba(255, 0, 0)');
                 img_modal.src="img/error_alerta.png";   //Se modifica la imagen del modal 
-                valor = valor.replace(/[^a-z\s]/g, ''); // Eliminar caracteres especiales
+                valor = valor.replace(/[^a-zñ\s]/g, ''); // Eliminar caracteres especiales
             }
     
             // Actualizar el valor del textarea
